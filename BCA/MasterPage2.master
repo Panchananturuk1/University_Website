@@ -1,0 +1,129 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeFile="MasterPage2.master.vb" Inherits="MasterPage2"  %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Martinez</title>
+    <style type="text/css">
+       
+         #nav 
+			{
+                margin:0px;
+             }
+            #nav ul 
+					{
+                        padding:0;
+                        list-style:none;
+            width: 1036px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+							#nav ul li 
+						{
+                            float:left;
+                            text-align:center;
+                            width:120px;
+                            margin: 1px;
+   						}
+
+                #nav ul li a
+					{
+                        color:#fff;
+                        text-decoration:none;
+                        font-family:Calibri;
+                        background:#0a0;
+                        display:block;
+                        padding:10px;
+                        
+					}
+					
+				#nav ul li a:hover
+				{
+					background-color:#0e0;
+					color: #000;
+				}
+				
+				#nav ul li ul
+				{
+					display:none;
+				}
+							#nav ul li:hover ul
+				{
+					display:block;
+				}	
+		.auto-style1 {
+            width: 1249px;
+        }
+        .auto-style2 {
+            height: 40px;
+        }
+        .auto-style3 {
+            height: 72px;
+        }
+		.auto-style4 {
+            font-size: larger;
+            color: #FF0000;
+            font-style: italic;
+        }
+		</style>
+</head>
+<body>
+    <form id="form1" runat="server"> 
+
+         <table style="font-family:Arial">
+    <tr>
+        <td colspan="2" style="background-color:#3399FF; 
+            text-align:left" class="auto-style3">
+            <h1 style="height: 53px">
+                &nbsp;
+                <asp:Image ID="Image1" runat="server" Height="66px" ImageUrl="~/Images/apl2.png" Width="77px" />
+&nbsp;&nbsp; <span class="auto-style4">Computer Science</span></h1>
+<div id="nav">
+		<ul>
+			<li><a href="http://localhost:58274/Menu%20Info/Home.aspx">HOME</a></li>
+			<li><a href="http://localhost:58274/Menu%20Info/About.aspx">ABOUT</a></li>
+             <li><a href="#">Adiministration</a></li>
+             <li><a href="#">Admission</a></li>
+            <li><a href="http://localhost:58274/Registration/Student.aspx">Registration</a>
+                <ul>
+                    <li><a href="http://localhost:58274/reg.aspx">Account</a></li>
+                    <li><a href="http://localhost:58274/Login.aspx">Login</a></li>
+                </ul>
+            </li>
+             <li><a href="#">Facilities</a>
+                 <ul>
+                    <li><a href="#">Central Library</a></li>
+                     <li><a href="#">Computer Center</a></li>
+                 </ul>
+                </li>
+		        <li><a href="#">Contact</a></li>
+		        <li><a href="#">Notiification</a></li>
+        </ul>
+		</div>
+        </td>
+    </tr>
+    <tr>
+        <td style="height:500px; background-color:#66FFFF; width:150px">
+            <h3>Menu</h3>
+        </td>
+        <td style="background-color:#9999FF; " class="auto-style1">
+             <h3>Content&nbsp;</h3>  
+            <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:#3399FF; text-align:center" class="auto-style2">
+            <b>Website Footer</b>
+        </td>
+    </tr>
+</table>
+
+    </form>
+</body>
+</html>
+
+ 

@@ -1,0 +1,111 @@
+﻿
+    #floating-box {
+        background-color:white;
+    display: inline-block;
+    width: 200px;
+    height: 329px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+
+
+
+
+
+      #floating-box_important_Links {
+        background-color:white;
+    display: inline-block;
+    width: 327px;
+    height: 329px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;
+    margin-left: 19px;
+}
+
+
+
+
+
+    #floating-box2 {
+        background-color:white;
+    display: inline-block;
+    width: 100%;
+    height: 329px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+
+    #floating-boxs1 {
+    display: inline-block;
+    width:100%;
+    height: 143px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+
+    #floating-boxs2 {
+    display: inline-block;
+    width: 267px;
+    height: 134px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+
+    
+
+
+#floating-box {
+    display: inline-block;
+    width: 328px;
+    height: 311px;
+    margin: 0px 0px 0px 7px;
+    border: 1px solid #99CCFF;  
+}
+
+ #cuo_event {
+    display: inline-block;
+    width: 1148px;
+    height: 340px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+
+    #floating-boxs3 {
+    display: inline-block;
+    width: 269px;
+    height: 144px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+    #floating-boxs5 {
+    display: inline-block;
+    width: 269px;
+    height: 149px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+
+    #gallery {
+    display: inline-block;
+    width: 518px;
+    height: 500px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}
+
+     #cuo_videos {
+    display: inline-block;
+    width: 1147px;
+    height: 500px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;
+    background-color: #FFFFFF;
+}
+    
+    #cuo_koraput_media {
+    display: inline-block;
+    width: 1081px;
+    height: 540px;
+    margin-right:0px;
+    border: 3px solid #99CCFF;  
+}

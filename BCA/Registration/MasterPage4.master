@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage4.master.cs" Inherits="Registration_MasterPage4" %>
+
+
+<html>
+
+<html>
+
+<style type="text/css">
+
+
+    form#form1
+    {
+
+    height:461px;
+        margin-top: 11px;
+    }
+
+body {
+	background-color: #CCC;
+	margin:157px 80px 100px 100px;
+        height: 537px;
+    }
+div#fixedheader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:88px;
+	color:#CCC;
+	background:#333;
+	padding:20px;
+}
+div#fixedfooter {
+	position:fixed;
+	bottom:-5px;
+	left:4px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
+}
+
+
+ #nav 
+			{
+                margin:0px;
+             }
+            #nav ul 
+					{
+                        padding:0;
+                        list-style:none;
+        margin-top: 0px;
+    }
+							#nav ul li 
+						{
+                            float:left;
+                            text-align:center;
+                            width:120px;
+                            margin: 1px;
+   						}
+
+                #nav ul li a
+					{
+                        color:#fff;
+                        text-decoration:none;
+                        font-family:Calibri;
+                        background:#0a0;
+                        display:block;
+                        padding:10px;
+                        
+					}
+					
+				#nav ul li a:hover
+				{
+					background-color:#0e0;
+					color: #000;
+				}
+				
+				#nav ul li ul
+				{
+					display:none;
+				}
+							#nav ul li:hover ul
+				{
+					display:block;
+				}	
+
+
+
+    .auto-style10 {
+        width: 100%;
+    }
+    
+
+    .auto-style25 {
+        width: 87px;
+    }
+    
+
+    .auto-style27 {
+        color: #FFFFFF;
+        font-size: 40px;
+        text-align: left;
+        width: 852px;
+    }
+
+
+    .auto-style26 {
+        color: #FFFFFF;
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+    </style>
+
+
+<body>
+
+    <form id="form1" runat="server">
+           
+           <div id="nav">
+
+
+            <table style="font-family:Arial; height: 102px; margin-top: 121px; margin-left: 0px; width: 1076px; margin-right: 490px; margin-bottom: 48px;">
+                <tr>
+                    <td class="auto-style1">
+                             <div id="fixedheader">
+                                 <table class="auto-style10">
+                                     <tr>
+                                         <td class="auto-style25">
+                                 <asp:Image ID="Image2" runat="server" Height="60px" ImageUrl="~/BCA/Images/apl2.png" Width="70px" />
+                                         </td>
+                                         <td class="auto-style27">COMPUTER SCIENCE</td>
+
+                                         <td class="auto-style26">
+                                 <asp:Image ID="Image9" runat="server" ImageUrl="~/BCA/Images/FB.png" Width="30px" />
+                                 <asp:Image ID="Image8" runat="server" ImageUrl="~/BCA/Images/Twt.png" Width="30px" />
+                                 <asp:Image ID="Image10" runat="server" ImageUrl="~/BCA/Images/Insta.png" Width="30px" />
+                                         </td>
+
+                                     </tr>
+                                 </table>
+                                 <table class="auto-style10">
+                                     <tr>
+                                         <td>
+                                 <ul>
+                                     <li><a href="http://localhost:58274/Menu%20Info/Home.aspx">HOME</a>
+                                         <li><a href="http://localhost:58274/Menu%20Info/About.aspx">ABOUT</a></li>
+                                  <li><a href="#">Admission</a>
+                                      <ul>
+                                          <li><a href="#">Hostel Registration</a></li>
+                                      </ul>
+                                  </li>
+                                 <li><a href="http://localhost:3146/CUO/BCA/Registration/Student.aspx">Registration</a>
+                <ul>
+                    <li><a href="http://localhost:58274/reg.aspx">Account</a></li>
+                    <li><a href="http://localhost:58274/Login.aspx">Login</a></li>
+                </ul>
+            </li>
+             <li><a href="#">Facilities</a>
+                 <ul>
+                    <li><a href="#">Central Library</a></li>
+                     <li><a href="#">Hostel</a></li>
+                     <li><a href="#">Computer Center</a></li>
+                 </ul>
+                </li>
+		        <li><a href="http://localhost:58274/Menu%20Info/Contact.aspx">Contact</a></li>
+		        <li><a href="#">Notiification</a></li>
+        </ul>
+                                         </td>
+                                     </tr>
+                                 </table>
+                               
+                                   </div> 
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder> <div id="Div1">
+    
+  <div>
+            </div>
+        
+
+                        </div>
+        
+                           <div>
+                               <br />
+    </div>
+                             
+                        </div>
+        
+                             
+             </td>
+    
+</table>
+
+
+    </form>
+</body>
+</html>

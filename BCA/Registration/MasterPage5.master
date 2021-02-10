@@ -1,0 +1,675 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage5.master.cs" Inherits="Registration_MasterPage5" %>
+
+
+
+<html>
+
+<style type="text/css">
+
+    
+
+    body {
+	    margin-right:0px;
+	background-color: #CCC;
+        height: 29px;
+        margin-top: 0px;
+    }
+div#fixedheader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:116px;
+	color:#CCC;
+	background:#333;
+	padding:20px;
+        bottom: 274px;
+    }
+
+div#fixedheader2 {	
+	top:80px;
+	left:0px;
+	width:100%;
+	height:390px;
+	color:#CCC
+	background:#85929E;
+	padding:20px;
+}
+
+#border2{
+    font-size:30px;
+    top:80px;
+	left:0px;
+	width:100%;
+    height:386px;
+	color:#CCC;
+    background-color:#85929E;
+	padding:20px;
+        margin-top: 237px;
+    }
+
+
+
+div#fixedfooter {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
+}
+
+ #nav 
+			{
+                margin:0px;
+             }
+			 
+			 
+            #nav ul 
+					{
+                        padding:0;
+                        list-style:none;
+                        margin-top: 0px;
+                         margin-left: 0px;
+                   }
+							#nav ul li 
+						{
+                            float:left;
+                            text-align:center;
+                            width:140px;
+                            margin: 0px;
+                            position:relative;
+   						}
+
+                #nav ul li a
+					{
+					
+					text-align:left;
+					width:250px;
+					
+                        color:#fff;
+                        text-decoration:none;
+                        font-family:Calibri;
+                        background:#000;
+                        display:block;
+                        padding:15px;
+                        
+					}
+					
+				#nav ul li a:hover
+				{
+					text-align:left;
+					width:250px;
+					background-color:#0e0;
+					color: #000;
+				}
+				
+				#nav ul li ul
+				{
+					
+					display:none;
+				}
+		
+
+                		 #nav ul ul
+					{
+					
+					text-align:left;
+					width:250px;
+					position:absolute;
+                      display:none;
+                        
+					}
+					
+					#nav ul li:hover>ul{
+					
+					display:block;
+					
+					}
+					
+					#nav ul ul ul 
+					{
+					margin-left:280px;
+					top:0px;
+					
+					}
+
+
+    .newStyle1 {
+        font-family: "Comic Sans MS";
+    }
+    
+
+    .newStyle2 {
+        font-family: "Courier New", Courier, monospace;
+    }
+    .newStyle3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+
+
+
+    #Education {
+	font-size:75px;
+	height:90px;
+	background-color:#333;
+        margin-top: 39px;
+    }
+
+
+#border{
+    font-size:25px;
+	width:891px;
+	text-align:left;
+	height:405px;
+	background-color:#00ffff;
+    border: 7px solid red;
+    margin-left: 195px;
+     margin-top: 24px;
+    }
+
+    .auto-style5 {
+        color: #FF0000;
+    }
+    .auto-style6 {
+        text-align: center;
+    }
+    
+
+    .auto-style7 {
+        font-size: xx-large;
+        color: #FF0000;
+    }
+
+
+    h1 {
+    width:100%;
+    border-bottom: 3px solid red;
+    background-color:#FFFFFF;
+    font-size:50px;
+}
+
+    
+
+    .auto-style8 {
+        color: #FF6600;
+    }
+
+    
+
+    .auto-style9 {
+        font-size: medium;
+        margin-left: 120px;
+    }
+
+    
+
+    .auto-style10 {
+        width: 100%;
+        height: 52px;
+        margin-top: 0px;
+    }
+    .auto-style12 {
+        width: 313px;
+        text-align: left;
+        font-size: large;
+    }
+    .auto-style14 {
+        font-size: large;
+    }
+    .auto-style15 {
+        width: 836px;
+        font-size: large;
+    }
+
+    
+
+    .auto-style16 {
+        width: 313px;
+        text-align: left;
+        font-size: large;
+        height: 165px;
+    }
+    .auto-style17 {
+        width: 836px;
+        font-size: large;
+        height: 165px;
+    }
+
+    
+
+    .auto-style18 {
+        width: 1416px;
+        font-size: large;
+        height: 107px;
+        margin-bottom: 0px;
+    }
+
+    #img8 img {
+        top:100px;
+        right:400px;
+        height:100px;
+        margin-top: 0px;
+    }
+
+   
+    .auto-style20 {
+        color: #FFFFFF;
+    }
+
+    
+
+    #Education0 {
+	font-size:75px;
+	height:90px;
+	background-color:#333;
+        margin-top: 39px;
+    }
+
+
+    .auto-style22 {
+        color: #FF6600;
+        text-align: left;
+        height: 58px;
+    }
+
+
+    .auto-style23 {
+        width: 410px;
+    }
+    .auto-style24 {
+        width: 345px;
+    }
+
+
+    .auto-style25 {
+        width: 87px;
+    }
+    .auto-style26 {
+        color: #FFFFFF;
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+    .auto-style27 {
+        color: #FFFFFF;
+        font-size: 40px;
+        text-align: left;
+        width: 852px;
+    }
+
+
+    .auto-style28 {
+        width: 277px;
+        font-size: large;
+        height: 107px;
+        margin-bottom: 0px;
+    }
+
+
+    </style>
+
+<body>
+    		       
+    <form id="form1" runat="server">
+ 
+                <div id="border2"> 
+                    <p style="width: 978px; margin-top: 0px;">
+                        The Department of Computer Science was founded by people who had a vision. 
+			 This vision was how computer science would fit into the unique spirit of Yale
+			 University, an institutionoriented an unusual degree around undergraduate 
+			 education and close to interdepartmental collaboration. The Department has
+			 always had close ties to mathematics and engineering, but has increasingly
+			 experienced collaborations with other disciplines important to Yale, including
+			 psychology, linguistics, economics, business, statistics, music, medicine, 
+			 physics and more. It is through these collaborations that the importance 
+			 of computer science in a broader sense is best appreciated. 
+                    </p>
+                </div>
+
+                <div id="Education" class="auto-style6">
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image5" runat="server" Height="82px" ImageUrl="~/BCA/Images/banner-img.png" Width="271px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style20">Education</span>&nbsp; &nbsp;<asp:Image ID="Image4" runat="server" Height="82px" ImageUrl="~/BCA/Images/banner-img.png" Width="215px" /></div>
+  
+         </div>      
+
+
+            
+            <div id="nav">
+
+                
+                       <tr>
+                         <td class="auto-style1">
+                             <div id="fixedheader">
+                                 <table class="auto-style10">
+                                     <tr>
+                                         <td class="auto-style25">
+                                 <asp:Image ID="Image2" runat="server" Height="60px" ImageUrl="~/BCA/Images/apl2.png" Width="70px" />
+                                         </td>
+                                         <td class="auto-style27">COMPUTER SCIENCE</td>
+
+                                         <td class="auto-style26">
+                                 <asp:Image ID="Image9" runat="server" ImageUrl="~/BCA/Images/FB.png" Width="30px" />
+                                 <asp:Image ID="Image8" runat="server" ImageUrl="~/BCA/Images/Twt.png" Width="30px" />
+                                 <asp:Image ID="Image10" runat="server" ImageUrl="~/BCA/Images/Insta.png" Width="30px" />
+                                         </td>
+
+                                     </tr>
+                                 </table>
+                  
+            <table class="auto-style18">
+                <tr>
+                    <td>
+                  
+           <ul>
+	       <li><a href="#">HOME</a></li>
+			<li><a href="#">ACADEMICS</a>
+                <ul>
+                   <li><a href="#">PROGRAME OFFERED</a></li>
+                   <li><a href="http://localhost:3146/CUO/BCA/Menu%20Info/Home.aspx">BCA</a></li>
+                   <li><a href="#">MBA</a></li>
+                   <li><a href="#">OTHER PROGRAM</a></li>
+               </ul>
+			</li>
+             <li><a href="#">ADMISSIONS</a>
+                 <ul>
+                     <li><a href="#">COURSES</a></li>
+                     <li><a href="#">FEES STUCTURE</a></li>
+                     <li><a href="#">LOAN FACILITY</a></li>
+                 </ul>
+             </li>
+             <li><a href="#">FACILITIES</a>
+                 <ul>
+                     <li><a href="#">COMPUTER LAB</a></li>
+                     <li><a href="#">CENTRAL LIBRARY</a></li>
+                     <li><a href="#">SCOLARSHIP</a></li>
+                     <li><a href="#">STUDY TOUR</a></li>
+                     <li><a href="#">TEACHING LEARNING PROCESS</a></li>
+                     <li><a href="#">REGULATION</a>
+                         <ul>
+                             <li><a href="#">CALENDER</a></li>
+                             <li><a href="#">TIME TABLE</a></li>
+                             <li><a href="#">GUIDE LINES</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#">HOSTEL</a></li>
+                     <li><a href="#">CANTEEN</a></li>
+                     <li><a href="#">DISPENSARY</a></li>
+                     <li><a href="#">TRANSPORTATION</a></li>
+                     <li><a href="#">GYM</a></li>
+                     <li><a href="#">BANKING</a></li>
+                     <li><a href="#">WIFI FACILITY</a></li>
+                 </ul>
+             </li>
+            <li><a href="#">PLACEMENTS</a>
+                <ul>
+                    <li><a href="#">PLACEMENT HUB</a></li>
+                    <li><a href="#">TRAINING PROGRAM</a></li>
+                    <li><a href="#">SUMMER INTERNSHIP</a></li>
+                </ul>
+            </li>
+             <li><a href="#">CAMPUS LIFE</a>
+                 <ul>
+                     <li><a href="#">AMINITIES</a></li>
+                     <li><a href="#">HOSTEL ACCOMDATION</a></li>
+                 </ul>
+             </li>
+		        <li><a href="#">RESEARCH</a>
+                    <ul>
+                        <li><a href="#">RESEARCH INITIATIVE</a></li>
+                        <li><a href="#">FDP</a></li>
+                        <li><a href="#">RESEARCH PUBLICATION</a></li>
+                        <li><a href="#">R & D INTIATIVE</a></li>
+                        <li><a href="#">SEMINARS & CONFERENCE</a></li>
+                    </ul>
+		        </li>
+		        <li><a href="#">CAREER</a></li>
+                 <li><a href="#">CONTACT US</a></li>
+      </ul>
+                    </td>
+                </tr>
+            </table>
+                               
+                                   </div> 
+      </td>   
+ 
+ </div>
+                            
+                                     <div id="border" class="auto-style6"><span class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FEATURED PROGRAM IN COMPUTER SCIENCE</span><br />
+            <br />
+            &nbsp;
+            &nbsp;<asp:Image ID="Image24" runat="server" ImageUrl="~/BCA/Images/logo.jpg" Width="90px" />
+&nbsp;<asp:Image ID="Image7" runat="server" Height="111px" ImageUrl="~/BCA/Images/LINE.jpg" Width="7px" CssClass="auto-style5" />
+            <span class="auto-style7">&nbsp;Central University Of Orissa</span><br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Build your carrier in Computer Science online through Central University Of Orissa.
+The program prepares students for a wide variety of high-demand roles in different fields.
+A bachelor's degree is required for admission to the program. GRE waivers are available for those who qualify.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registration/Student.aspx">Click Here For Rgistration</asp:HyperLink>
+&nbsp;</div>
+            
+                                                          
+                             <div id="Div1">
+                 <h1 class="auto-style8">EARNING YOUR COMPUTER SCIENCE DEGREE </h1> 
+                            
+                     <p class="auto-style9"> <span class="auto-style14">Computer science degrees are in high demand, largely due to ample and high-paying job prospects.
+                         It’s no surprise, then, that computer science degrees are some of the most popular offerings in 
+                         the world of online learning. Degree programs, from associate to doctoral, are plentiful. 
+                         Some programs allow students to combine the coursework of a bachelor’s and a master’s, enabling
+                          them to earn both degrees in less time. Others offer fast track options that enable students
+                          to earn a degree in as short a time as one year.<br>
+                         <br />
+                         As with any discipline, some online computer science degree programs are better than others.
+                         When evaluating options, students should consider three key categories:</span><br>
+                         <br /><br>
+                         <table class="auto-style10">
+                             <tr>
+                                 <td class="auto-style16"><strong>Curriculum Quality:</strong></td>
+                                 <td class="auto-style17">The computer science industry is constantly in flux. New technologies are introduced practically daily.
+                                                A good computer science degree program must be able to keep up with the industry by updating its courses
+                                                regularly. The coding languages and skills students learn must still be relevant when they graduate. 
+                                                Check course offerings to ensure they are up to date.</td>
+                             </tr>
+                             <tr>
+                                 <td class="auto-style12"><strong>Student Support:</strong></td>
+                                 <td class="auto-style15">
+                                     <br />
+                                     Many computer science courses can be challenging. It’s important
+                                                          to evaluate the type of student support the online computer science
+                                                          degree program offers. How accessible are the professors? What type of 
+                                                          tutoring help is available? Is there an option to come to campus for assistance?&nbsp;</td>
+                             </tr>
+                         </table>
+                         <table class="auto-style10">
+                             <tr>
+                                 <td class="auto-style28" style="text-align: left"><strong>School or Program Accreditation:&nbsp;</strong></td>
+                                 <td>
+                                     <br />
+                                     <span class="auto-style14">Employers only recognize degrees granted from accredited schools. Any other degree, online
+                                 or campus-based, is practically worthless in the job market. Colleges that offer online 
+                                     education degree programs are generally accredited by one of six regional accrediting 
+                                     agencies. Regional accreditation applies to all of a school’s programs, including its
+                                      computer science degrees. Online schools may also be accredited by the Distance Education
+                                      and Training Council (DETC). In addition, schools have the option of having their computer
+                                      science programs accredited by the Accreditation Board for Engineering and Technology (ABET)
+                                     . Students should look for at least regional or DETC accreditation when selecting a program.</span></td>
+                             </tr>
+                         </table>
+                         <br />                       
+                     </p>     
+                                 
+                                 
+                                        
+
+
+                 <h1 class="auto-style8">EXPERT GUIDES & RESOURCES</h1> 
+                            
+               <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:Image ID="Image11" runat="server" ImageUrl="~/BCA/Images/RESOURCE IMG/coding-bootcamp-img.jpg" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:Image ID="Image12" runat="server" ImageUrl="~/BCA/Images/RESOURCE IMG/computer-science-before-colleges-img.jpg" />
+&nbsp;&nbsp;&nbsp;
+                   <asp:Image ID="Image13" runat="server" ImageUrl="~/BCA/Images/RESOURCE IMG/computer-science-career-img.jpg" />
+&nbsp;&nbsp;&nbsp;
+                   <asp:Image ID="Image14" runat="server" ImageUrl="~/BCA/Images/RESOURCE IMG/computer-science-cource-img.jpg" />
+                                 </p>
+                                 <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     <asp:Image ID="Image15" runat="server" ImageUrl="~/BCA/Images/RESOURCE IMG/computer-science-minority-img.jpg" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     <asp:Image ID="Image16" runat="server" ImageUrl="~/BCA/Images/RESOURCE IMG/computer-science-scholar-img.jpg" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     <asp:Image ID="Image17" runat="server" ImageUrl="~/BCA/Images/RESOURCE IMG/computer-science-women-img.jpg" />
+                                 </p>
+                                        
+                <div id="Education0" class="auto-style6">
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image18" runat="server" Height="82px" ImageUrl="~/BCA/Images/banner-img.png" Width="271px" />&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style20">INDUSTRY</span>&nbsp; &nbsp;<asp:Image ID="Image19" runat="server" Height="82px" ImageUrl="~/BCA/Images/banner-img.png" Width="215px" /></div>
+  
+                                 
+                                        
+
+
+                 <h1 class="auto-style22">EXPERT GUIDES & RESOURCES</h1> 
+                            
+                                 <table class="auto-style10">
+                                     <tr>
+                                         <td>Computer science careers are incredibly varied. Computer scientists code software, build components, figure out how to handle massive amounts of data, create websites and even solve crimes. Learn more about specific types of computer science careers below.<br />
+                                             <br />
+                                             <br />
+                                         </td>
+                                     </tr>
+                                 </table>                                                                       
+
+
+                 <h1 class="auto-style22">CERTIFICATIONS</h1>
+                            
+                                 <table class="auto-style10">
+                                     <tr>
+                                         <td>In the field of information technology, employers look for candidates with certifications, because these indicate a person has the knowledge, experience, and skills to perform a specific job. Some certifications are technology-specific, while others focus on measuring skills independent of any specific hardware or software products. Certification candidates generally complete a classroom or online course of study and pass an examination. Some certifications are only valid for a certain period of time and need to be renewed periodically. Here we take a look at three popular types of certifications:</td>
+                                     </tr>
+                                 </table>
+                            
+                                 <table class="auto-style10">
+                                     <tr>
+                                         <td class="auto-style23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             <asp:Image ID="Image21" runat="server" ImageUrl="~/BCA/Images/Certification/microsoft.png" />
+                                         </td>
+                                         <td class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             <asp:Image ID="Image22" runat="server" ImageUrl="~/BCA/Images/Certification/cisco.png" />
+                                         </td>
+                                         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             <asp:Image ID="Image23" runat="server" ImageUrl="~/BCA/Images/Certification/comptia.png" />
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <td class="auto-style23">
+                                             <p>
+                                                 Microsoft, one of the world's leading software corporations, offers certifications that validate the holder's expertise with its technology. Microsoft Certified Professionals also have access to community resources that enable the exchange of ideas, increase knowledge and skills, and broaden career opportunities. Certifications are available in three levels, each requiring increased levels of knowledge and expertise: Microsoft Technology Associate (MTA), Microsoft Solutions Associate (MCSA), and Microsoft Solutions Expert (MCSE). Certifications are offered in the following five categories:<br />
+&nbsp;<br />
+                                                 Server<br />
+Desktop
+Applications<br />
+Database
+                                                 <br />
+                                                 Developer
+                                                 <br />
+                                                 <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Microsoft certifications include:</strong><br />
+MTA: IT Infrastructure<br />
+                                                 MTA: Developer<br />
+                                                 MTA: Database<br />
+                                                 MSCA: Windows Server 2012<br />
+                                                 MSCA: Windows 8<br />
+                                                 MCSA: SQL Server 2012<br />
+                                                 MSCE: Server Infrastructure<br />
+                                                 CSE: Data Platform<br />
+                                                 MCSE: Business Intelligence<br />
+MCSD: Windows Store Apps<br />
+MCSD: Web Apps<br />
+                                                 Microsoft Office Specialist (MOS):<br />
+                                                 Specialist, Expert, Master&nbsp;&nbsp;</p>
+                                         </td>
+                                         <td class="auto-style24">Cisco Systems, a leader in networking equipment, offers five levels of network certification, each indicating increased experience and expertise: Entry, Associate, Professional, Expert and Architect, the highest level of accreditation within the Cisco Career Certification program.<br />
+                                             <br />
+                                             An additional designation, that of Specialist, further certifies those with Cisco Career Certifications at the associate, professional or expert levels. By earning specialist certifications, network professionals can enhance their core networking knowledge in technologies such as security, data center or video. 
+                                             <br />
+                                             <br />
+&nbsp;&nbsp;&nbsp; <strong>Cisco certifications include:
+</strong>
+                                             <br />
+                                             <br />
+                                             Cisco Certified Entry Networking 
+                                             <br />
+                                             Technician (CCENT)<br />
+&nbsp;Cisco Certified Technicians (CCT)<br />
+&nbsp;Cisco Certified Network Associate (CCNA)<br />
+&nbsp;Cisco Certified Design Associate (CCDA)<br />
+&nbsp;Cisco Certified Design Professional (CCDP)<br />
+&nbsp;Cisco Certified Network Professional (CCNP)<br />
+&nbsp;The Cisco Certified Design Expert (CCDE)<br />
+&nbsp;The Cisco Certified Internetwork Expert (CCIE)<br />
+&nbsp;The Cisco Certified Architect (CCAr)
+                                             <br />
+                                             Cisco Data Center Application Services Design Specialist<br />
+&nbsp;Cisco Cybersecurity Specialist<br />
+&nbsp;Cisco Video Network Specialis&nbsp;</td>
+                                         <td>CompTIA offers vendor-neutral certifications that measure foundational skills. They show employers that a candidate has skills to do a job, regardless of the hardware or software product the company uses. There are four levels of CompTIA certifications:<br />
+                                             <br />
+&nbsp;Basic: For those seeking entry-level jobs.
+                                             <br />
+                                             <br />
+                                             Specialty: Covers the business and technical knowledge needed for specific vertical or niche markets.<br />
+                                             <br />
+&nbsp;Professional: Evaluates the technical skills and knowledge needed to succeed in specific IT careers.<br />
+                                             <br />
+&nbsp;Mastery: Covers the advanced practice of a specific discipline; candidates must be able to integrate multiple enterprise disciplines through the application of advanced skills.
+                                             <br />
+                                             <br />
+                                             <strong>CompTIA certifications include:</strong>
+                                             <br />
+                                             <br />
+                                             Advanced Security Practitioner (CAS)
+                                             <br />
+                                             CompTIA A+
+                                             <br />
+                                             CompTIA CDIA+<br />
+&nbsp;CompTIA Cloud+
+CompTIA CCT+
+CompTIA Linux+ Powered by LPI
+CompTIA Mobile App Security+
+CompTIA Mobility+
+CompTIA Network +
+CompTIA Project+
+CompTIA Security+
+CompTIA Server+
+CompTIA Storage+ Powered by SNIA
+CompTIA Cloud Essentials
+CompTIA Healthcare IT Technician&nbsp;</td>
+                                     </tr>
+                                     <tr>
+                                         <td class="auto-style23">
+                                             &nbsp;</td>
+                                         <td class="auto-style24">&nbsp;</td>
+                                         <td>&nbsp;</td>
+                                     </tr>
+                                 </table>
+                            
+                    <p3></p3>
+
+                                
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                             
+
+
+    </form>
+</body>
+</html>
+
