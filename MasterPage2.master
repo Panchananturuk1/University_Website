@@ -1,0 +1,660 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+
+<html>
+  
+    <title>
+        CUO
+    </title>
+    <head>
+
+<link rel="Stylesheet" href="CSS/Menus.css" type="text/css" />
+<link rel="Stylesheet" href="CSS/Header_Footer.css" type="text/css" />
+<link rel="Stylesheet" href="CSS/FloatingBox.css" type="text/css" />
+<link rel="Stylesheet" href="CSS/AutoStyle.css" type="text/css" />
+<link rel="Stylesheet" href="CSS/Img_Zoom.css" type="text/css" />
+<link rel="Stylesheet" href="CSS/slide2.css" type="text/css" />
+<link rel="Stylesheet" href="CSS/our_course_2.css" type="text/css" />
+<link rel="Stylesheet" href="CSS/content_slider.css" type="text/css" />
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+
+<style type="text/css">
+   
+
+
+    body {
+        margin-right:0px;
+	background-color: #eaf2ff;
+    width:100%;
+        
+        
+    }
+
+    
+
+    .auto-style70 {
+        width: 1122px;
+    }
+
+      
+
+    .auto-style71 {
+        font-size: medium;
+    }
+
+      
+
+    </style>
+        </head>
+<body>
+    <form id="form1" runat="server" style="width:100%">
+    
+
+        <div id="fixedheader"> 
+            <div id="nav">
+
+                <table class="auto-style18">
+                    <tr>
+                        <td class="auto-style50"> 
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Logo/cuo logo.png" Width="111px" Height="94px" />
+                        </td>
+                        <td class="auto-style51"><span class="auto-style45"><span class="auto-style48">CENTRAL UNIVERSITY OF ORISSA</span></span><span class="auto-style47"> </span> <br class="auto-style48" />
+                                               <span class="auto-style45"><span class="auto-style48">केंद्रीय विश्वविद्या , कोरापुट</span></span>
+                    </td>
+                        <td class="auto-style40">
+
+
+                            <span class="auto-style67" style="border:20px; margin-left:75%; padding:10px;"><a href="Login Page.aspx" style="text-decoration:none"> <span class="auto-style68">Login || Register </span> </a></span>
+
+                           <br />
+                            
+
+                           
+                    </tr>
+                </table>
+
+                  
+            <table class="auto-style18">
+                <tr>
+                    <td>
+                  
+           <ul style="height:100px;">
+	       <li><a href="index.aspx"><span class="auto-style71">HOME</span></a>
+	       </li>
+                <li><a href="#">ABOUT US</a>
+                <ul>
+                    <li><a href="About Us.aspx">INTRODUCTION</a></li>
+                    <li><a href="Gallery.aspx">PHOTO GALLEY</a></li>
+                    <li><a href="Downloads.aspx">DOWNLOADS</a></li>
+                </ul>
+            </li>
+			<li><a href="#">ACADEMICS</a>
+                <ul>
+                   <li><a href="Program Offered.aspx">PROGRAME OFFERED</a>
+                      
+                       
+                       </li>
+
+
+                           
+                         
+                   <li> <a href="Syllabus.aspx"> Syllabus</a>
+                      </li>
+
+
+                   
+               
+                     <li><a href="#">REGULATION</a>
+                         <ul>
+                             <li><a href="Calendar.aspx">CALENDER</a></li>
+                             <li><a href="#">TIME TABLE</a></li>
+                             <li><a href="#">GUIDE LINES</a></li>
+                         </ul>
+                     </li>
+               </ul>
+			</li>
+             <li><a href="#">ADMISSIONS</a>
+                 <ul>
+                     
+                     <li><a href="Administration.aspx">ADMINISTRATION</a></li>
+                     <li><a href="Procedure.aspx">PORCEDURE</a></li>
+                     <li><a href="Fees_Stucture.aspx">FEES STUCTURE</a></li>                 
+                    
+                 </ul>
+             </li>
+             <li><a href="#">FACILITIES</a>
+                 <ul>
+                    <li><a href="#">Lodging & Boarding</a>
+                         <ul>
+                            <li><a href="Hostel2.aspx">HOSTEL</a></li>
+                     <li><a href="Canteen.aspx">CANTEEN</a></li>
+                  
+                     <li><a href="transport.aspx">TRANSPORTATION</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#">Campus Facilities</a>
+                         <ul>
+                    <li><a href="Computer Lab.aspx">COMPUTER LAB</a></li>
+                     <li><a href="central library.aspx">CENTRAL LIBRARY</a></li>
+                     <li><a href="scolarship.aspx">SCOLARSHIP</a></li>
+                   
+                                            
+
+                         </ul>
+                     </li>  
+                     <li><a href="All facilities videos.aspx">All Facilities Videos</a></li>
+                                        
+                 </ul>
+             </li>
+           
+           
+                 <li><a href="Contact Us.aspx">CONTACT US</a></li>
+      </ul>
+                    </td>
+                </tr>
+            </table>
+   </div>
+</div>
+
+
+
+        <table style="width:100%">
+            <tr>
+                <td class="auto-style70"><asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+
+                              <asp:Timer ID="Timer1" runat="server" Interval="7000" OnTick="Timer1_Tick">
+                    </asp:Timer>
+                              <asp:Image ID="Image2" Height="500px" Width="100%" margin-top="100px" runat="server" style="margin-top: 0px" />
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+               
+
+</td>
+                    
+            </tr>
+        </table>         
+
+
+        <table class="auto-style18">
+            <tr>
+                
+                <td class="auto-style19">News</td>
+                <td style="background-color: #66FFFF">
+                    <marquee onmouseover="this.stop();" onmouseout="this.start();">
+
+                      <a href="CUO%20news/CUO-Annual-Report-2015-16-Hindi.pdf" style="text-decoration:none"  ><img src="Logo/New1.gif" />||  CUO news/CUO-Annual-Report-2015-16-Hindi   ||  </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CUO%20news/Press-Relaease-29-12-2015.pdf" style="text-decoration:none" >  ||  CUO news/Press-Relaease-29-12-2015  ||</a>
+
+                      </marquee> </td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+
+
+
+
+         <table class="auto-style54">
+             <tr>
+                 <td style="width:200px"></td>
+                 <td class="auto-style53">
+
+                     <header style="background-color:#99CCFF; height: 33px; width:321px" class="auto-style35"><strong >VISITOR</strong></header>
+                     <asp:Image ID="Image6" runat="server" ImageUrl="~/cuo images/visitor.jpg" Height="208px" Width="321px" />
+
+                 </td>
+                 <td class="auto-style53" style="margin-left:60px">
+
+
+                         <header style="background-color:#99CCFF; height: 33px; width:321px" class="auto-style35"><strong >CHANCELLOR</strong></header>
+                     <asp:Image ID="Image23" runat="server" ImageUrl="~/cuo images/k_srinath.jpg" Height="208px" Width="321px" />
+
+
+
+                 </td>
+                 <td class="auto-style53" style="margin-left:60px">
+                                 
+                               <header style="background-color:#99CCFF; height: 33px; width:321px" class="auto-style35"><strong >VICE CHANCELLOR</strong></header>
+                     <asp:Image ID="Image9" runat="server" ImageUrl="~/cuo images/chancellor.jpg" Height="208px" Width="321px" />
+
+
+
+
+                 </td>
+                 <td style="width:200px">&nbsp;</td>
+             </tr>
+             <tr>
+                 <td style="width:200px">&nbsp;</td>
+                 <td class="auto-style41" ><span class="auto-style31"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; His Excellency</strong></span><strong><br class="auto-style31" />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </strong><span class="auto-style31"><strong>&nbsp;&nbsp; Shri Ram Nath Kovind</strong></span><strong><br class="auto-style31" />
+                                        </strong><span class="auto-style31"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; President of India</strong></span></td>
+                 <td class="auto-style69"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prof. K. Srinath Reddy</strong><td class="auto-style31">
+                 <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prof. Sachidananda Mohanty
+                     
+                     </strong>
+                     
+                     <td style="width:200px"></td>
+                 
+             </tr>
+        </table>
+
+
+
+
+        <br />
+        <br />
+
+
+
+
+        <table class="auto-style18">
+            <tr>
+                <td style="width:100px">&nbsp;</td>
+                <td>
+
+                    <div id="floating-box2" style="height:300px"><header style="background-color:#99CCFF; height: 33px;" class="auto-style33"><strong>ABOUT CUO</strong></header>
+                    <span class="newStyle2"><span class="auto-style48">The Central University of Orissa (CUO), Koraput and The Hindustan Aeronautics
+                         Limited(HAL), Sunabeda signed a Memorandum of Understanding (MoU) to promote and enhance mutual academic and institutional
+                         ties among them. CUO Vice-chancellor, Prof. Sachidananda Mohanty and HAL Executive Director, Debasish
+                         Deb </span> <a href="CUO%20news/The-CUO-HAL-Sunabeda-signs-MoU.pdf"><span class="auto-style64">Read More....... </span></a>
+
+                    </span>
+
+                    </div>
+
+
+                </td>
+                <td>
+
+
+                    <div id="floating-box" style="height:300px; margin-left:20px"><header style="background-color:#99CCFF;" class="auto-style34"><strong>Notice Board</strong></header>
+    
+                    <marquee direction=up onMouseOver="this.stop();" OnMouseOut="this.start()" scrolldelay="20"  >
+                           <a href="notice%20board/LED-Televisions-2607.pdf" style="text-decoration:none"><img src="Logo/New1.gif" />Notice board/LED-Televisions-2607</a><br />
+                       <br />
+                            <a href="notice%20board/Limited-tender-Com-Tab-Chairs-2807.pdf" style="text-decoration:none"><img src="Logo/New1.gif" />Notice board/Limited-tender-Com-Tab-Chairs-2807</a><br />
+                      <br />
+                        <a href="notice%20board/Limited-Tender-LED-Projector-050617.pdf" style="text-decoration:none"><img src="Logo/New1.gif" />Notice board/Limited-Tender-LED-Projector-050617</a><br />
+                      <br />
+                        <a href="notice%20board/Limited-tender-LED-TV.pdf" style="text-decoration:none"><img src="Logo/New1.gif" />Notice board/Limited-tender-LED-TV</a><br />
+                     <br />
+                        <a href="notice%20board/pi-Viva-Voce-PhD-Odia.pdf" style="text-decoration:none"><img src="Logo/New1.gif" />Notice board/pi-Viva-Voce-PhD-Odia</a><br />
+                     <br />
+                        <a href="notice%20board/Provisional-List-PhD-Odia.pdf" style="text-decoration:none"><img src="Logo/New1.gif" />Notice board/Provisional-List-PhD-Odia</a><br /></marquee>                                         
+                        
+                    </div>
+
+
+
+                </td>
+                <td style="width:100px">&nbsp;</td>
+            </tr>
+        </table>
+
+
+
+
+
+
+       
+        <br />
+        <br />
+
+
+
+
+
+       
+
+
+
+
+
+        <table class="auto-style18" style=" background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25), rgba(42, 60, 87, 0.4)), linear-gradient(135deg, #670d10, #092756);">
+            <tr>
+                <td>
+                    
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Merriweather' rel='stylesheet' type='text/css'>
+
+<h1 style="font-family: 'Raleway', sans-serif; text-align:center;"> OUR<span id="hover"> PROGRAMS</span></h1>
+
+
+                     <table class="auto-style18">
+            <tr>
+                <td style="width:357px" class="auto-style40"><h1 style="font-family: 'Raleway', sans-serif; text-align:center;"> BCA</h1></td>
+                <td style="width:357px"><h1 style="font-family: 'Raleway', sans-serif; text-align:center;"> MBA</h1></td>
+                <td style="width:357px"><h1 style="font-family: 'Raleway', sans-serif; text-align:center;"> MATHEMATICS</h1></td>
+                <td style="width:357px"><h1 style="font-family: 'Raleway', sans-serif; text-align:center;"> B.ED</h1></td>
+            </tr>
+        </table>
+
+<div id="all">
+  <div class="view view-first">
+    <img src="Course img/keyboard.png" />
+    <div class="mask">
+      <h2>Computer Science</h2>
+      <p>Computer Science is the study of computers
+         and computational systems. computer scientists
+        deal mostly with software and software systems;
+        this includes their theory, design, development,
+        and application.</p>
+      <a href="BCA_Pro.aspx" class="info">View course</a>
+    </div>
+  </div>
+
+
+  <div class="view view-second">
+    <img src="Course img/mba.jpg" style="height:280px; width:368px; top: 0px; left: 0px;" />
+    <div class="mask"></div>
+    <div class="content">
+      <h2>MBA</h2>
+      <p>The Master of Business Administration (MBA) is an internationally-recognized<br />
+degree designed to develop the skills required for careers in business and management.</p>
+      <a href="MBA_Pro.aspx" class="info">View course</a>
+    </div>
+  </div>
+
+
+  <div class="view view-tenth">
+    <img src="Course img/Mathslabelled.jpg" style="height:279px; width:368px; top: 0px; left: 0px;" />
+    <div class="mask">
+      <h2>Department of MATH</h2>
+      <p>5-Year Integrated M.Sc. in Mathematics: 
+                
+                The programme has been designed to
+mould the students to take up career </p>
+      <a href="#" class="info">View course</a>
+    </div>
+  </div>
+
+  <div class="view view-second">
+    <img src="Course img/statistics.png" style="height:273px; width:363px; top: 0px; left: 0px;" />
+    <div class="mask"></div>
+    <div class="content">
+      <h2 id="testimonials">B.ED</h2>
+      <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <a href="B.ED_Pro.aspx" class="info">View course</a>
+    </div>
+  </div>
+
+
+
+    
+
+    
+
+
+</div>
+
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+
+
+
+<header style="width:100%; height: 37px; background-color:#99CCFF;" class="auto-style66" ><strong>CUO EVENTS AND MEDIA</strong></header>
+        
+       
+    <table style="width:100%;" >
+        <tr>
+            <td style="width:600px">      
+<div id="slider">
+<ul>
+	<li>      
+	<img src="cuo event/04.jpg" alt="cnkjc" style="height:328px; width:531px; text-align: center;">
+	<div class="slider-container">
+	
+    <h4>Introduction Program For Freshers at CUO</h4>
+		<p>Central University of Orissa organized its 1st Induction programme for the freshers here on today. Prof. Sachidanand Mohanty, Hon’ble Vice-Chancellor address the programme as the Chief Guest. </p>
+		</img>
+	</div>
+	</li>
+		<li>
+            <img src="cuo event/05.jpg" alt="cnkjc" style="height:320px; width:525px;">
+		<div class="slider-container">
+       <h4>International yoga Day</h4>
+		<p>Yoga is an invaluable gift of India's ancient tradition. It embodies unity of mind and body; thought and action; restraint and fulfillment; harmony between man and </p>
+        </img>
+        </div>
+	</li>
+		<li> <img src="cuo event/08.jpg" alt="cnkjc" style="height:320px; width:525px;">
+		<div class="slider-container">
+       <h4>Celebration of 3rd National Handloom Day</h4>
+	<p>The Third National Handloom Day was observed at the permanent campus of the Central University of Orissa, Sunabeda on 07.08.2017, with the objective to generate awareness about the importance of handloom industry.</p>
+        </img>
+        </div>
+	</li>
+		<li><img src="cuo event/09.jpg" alt="cnkjc" style="height:320px; width:525px;">
+		<div class="slider-container">
+      <h4>Pledge taking ceremony at cental university of orissa</h4>
+	<p</p>
+            </img>
+        </div>
+	</li>
+
+                <li><img src="cuo event/13.jpg" alt="cnkjc" style="height:320px; width:525px;">
+		<div class="slider-container">
+      <h4>NAC Peer team visit concludes</h4>
+	<p>On this occasion the Internal Complaints Committee (ICC) of
+the University organized a special programme at the campus</p>
+            </img>
+        </div>
+	</li>
+
+</ul
+</div>
+
+
+</td>
+            <td style="width:600px">      
+<div id="slider">
+<ul>
+	<li>
+	<img src="CUO Media/Foundation_Day.jpg" alt="cnkjc" style="height:328px; width:531px; text-align: center;">
+	<div class="slider-container">
+	
+        <a href="notice%20board/Celebration_of_9th_Foundation_Day.pdf"> <h4>CELEBRATION OF 9TH FOUNDATION DAY</h4></a>
+		<p>The Central University of Orissa, Koraput celebrated 9 th Foundation Day at its permanent campus, Sunabeda today. Prof. Sachidananda Mohanty, Vice-Chancellor hoisted the University flag and inaugurated the Foundation Day Programme</p>
+		</img>
+	</div>
+	</li>
+		<li>
+            <img src="CUO Media/handllomday.jpg" alt="cnkjc" style="height:320px; width:525px;">
+		<div class="slider-container">
+       <h4>National Handloom Day</h4>
+		<p>The Third National Handloom Day was observed at the permanent campus of the Central University of Orissa, Sunabeda on 07.08.2017, with the objective to generate awareness about the importance of handloom industry.</p>
+        </img>
+        </div>
+	</li>
+		<li> <img src="CUO Media/Nss_Cell.jpg" alt="cnkjc" style="height:320px; width:525px;">
+		<div class="slider-container">
+       <h4>CUO Inagguration Nss Cell</h4>
+	<p>The Central University of Orissa, Koraput inaugurated the National Service Scheme (NSS) cell on 23rd August, 2017 at its Main Campus in Sunabeda.</p>
+        </img>
+        </div>
+	</li>
+		<li><img src="CUO Media/Womensday.jpg" alt="cnkjc" style="height:320px; width:525px;">
+		<div class="slider-container">
+      <h4>Celebration Of Womens Day</h4>
+	<p>Central University of Orissa felicitate noted women of the region for their remarkable contribution in the field of women 
+empowerment  at it Sunabeda campus on the occasion of International Women’s Day.</p>
+            </img>
+        </div>
+	</li>
+</ul>
+</div>
+
+
+</td>
+        </tr>
+    </table>
+
+        <br />
+        <br />
+
+
+
+
+
+        <table class="auto-style54">
+            <tr>
+                <td style="width:100px">&nbsp;</td>
+               
+                
+                 <td  style="width:200px"><div id="cuo_koraput_media"><header style="background-color:#99CCFF; height: 39px;" class="auto-style65"><strong>CUO VIDEOS</strong></header>
+                   <iframe src="https://www.youtube.com/embed/zVHKF5M4Ds4" frameborder="0" allowfullscreen style="width: 1079px; height: 445px;"></iframe> <br />
+                    <strong><span class="auto-style47">Vice-Chancellor - Professor Sachinanda Mohanty - Central University Koraput - Etv News Odia.
+                                         </span></strong>
+                                         </div></td>
+               
+
+                <td><div id="floating-box_important_Links"><header class="auto-style65" style="background-color:#99CCFF; height: 37px;"><strong>Quic k Links</strong></header>
+                   <a href="Login Page.aspx"> <img src="Logo/registration.png" style="height: 91px; width: 318px" /></a>
+                <a href="Gallery.aspx">   <img alt="Galry" class="auto-style58" src="Logo/Gallery_Logo.png" /></a> 
+                            
+
+                  <a href="Downloads.aspx">  <img alt="Dwn" class="auto-style59" src="Logo/download.jpg" /> </a>
+                 <a href="Contact Us.aspx">   <img alt="Contact" class="auto-style60" src="Logo/Contact_Us_Logo.png" /></a>
+                     </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                       <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+                <td style="width:100px">
+
+
+
+
+
+        
+
+
+
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+        <table class="auto-style18">
+            <tr>
+               
+                
+
+                
+            </tr>
+        </table>
+
+       
+        <div>            
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+         <div id="fixedfooter">
+            
+                       
+                <table style="width:100%">
+                    <tr>
+                        <td style=" width: 270px;" class="auto-style45"><span style="color: #FFFFFF;"><h8><strong>ADDRESS</strong></h8></span>
+                            <ul style="list-style-type:none; height:100px;">
+                                <li class="auto-style46"> Central Univrsity Of Orissa</li>
+                                 <li class="auto-style46">Main Campus, Sunabeda-764 020, </li>
+                                 <li class="auto-style46">Odisha Tel: 06852-288200, 288210 </li>
+                                 <li class="auto-style46">Fax: 06852-288225</li>
+                                 <li><span class="auto-style46">Website: </span> <a href="http://www.cuo.ac.in" style="text-decoration:none"><span class="auto-style33">www.cuo.ac.in</span></a></li>
+                            </ul>
+
+                        </td>
+                        
+
+                        <td style=" width: 270px;"  class="auto-style45"><span style="color: #FFFFFF;"><h8><strong>GENERAL</strong></h8></span>
+                            <ul style="list-style-type:none; height:100px;">
+                                <li class="auto-style46"><a href="Login Page.aspx" style="text-decoration:none"><span class="auto-style45">Cuo User Login</span></a></li>
+                                 <li class="auto-style46"><a href="Gallery.aspx" style="text-decoration:none"><span class="auto-style45">Galleryy</span></a> </li>
+                                 <li class="auto-style46"><a href="Downloads.aspx" style="text-decoration:none"><span class="auto-style45">Downloads</span></a></li>
+                                  <li class="auto-style46"><a href="Contact Us.aspx"><span class="auto-style45">Contact Us</span></a></li>
+                                 <li class="auto-style46">Alumni</li>
+                                                             
+                            </ul>
+
+                        </td>
+
+
+
+
+
+                         <td style=" width: 270px;"><span style="color: #FFFFFF;"><h8><strong>ADMISSION</strong></h8></span>
+                            <ul style="list-style-type:none; height:100px;">
+                                <li class="auto-style46"><a href="Procedure.aspx" style="text-decoration:none"> <span class="auto-style45">Addmission Procedure</span></a></li>
+                                 <li class="auto-style46"><a href="Registration Form.aspx" style="text-decoration:none"><span class="auto-style45">Regstration</span></a></li>
+                                 <li class="auto-style46"><a href="Administration.aspx"><span class="auto-style45">Administration</span></a></li>
+                                 <li class="auto-style46"><a href="Program Offered.aspx" style="text-decoration:none"><span class="auto-style45">Programs</span></a></li>
+                                 <li class="auto-style46">Scolarship</li>
+                                 <li class="auto-style46"><a href="CUO Media/fecualty profile for website.pdf"><span class="auto-style45">Faculty Details</span></a></li>
+                                 
+                            </ul>
+
+                        </td>
+
+
+                        <td style=" width: 270px;"><span style="color: #FFFFFF;"><h8><strong>IMPORTANT LINKS</strong></h8></span>
+                            <ul style="list-style-type:none; height:100px;">
+                                <li class="Fore_Color"><a href="http://cuo.ac.in/" style="text-decoration:none; " class="auto-style45">CUO</a></li>
+                                 <li class="Fore_Color"> <a href="http://nptel.ac.in/" style="text-decoration:none; color: #FFFFFF;" >NPTEL</li>
+                                 <li class="Fore_Color"><a href="https://www.aicte-india.org/" style="text-decoration:none; " class="auto-style45">AICTE</a></li>
+                                 <li class="Fore_Color"><a href="https://www.ugc.ac.in/" style="text-decoration:none; " class="auto-style45">UGC</a></li>
+                                <li>
+
+
+                              <a href="https://www.facebook.com/"> <asp:Image ID="Image20"   runat="server" Height="60px" ImageUrl="~/Logo/FB.png" /></a>
+          <a href="https://twitter.com/login"><asp:Image ID="Image21" runat="server" Height="60px" ImageUrl="~/Logo/Twt.png" /></a>
+              <a href="https://www.instagram.com/?hl=en"><asp:Image ID="Image22" runat="server" Height="60px" ImageUrl="~/Logo/Insta.png" /></a>
+
+
+                           
+                                </li>
+
+                             
+                            </ul>
+
+                        </td>
+                        
+
+                    </tr>
+                </table>
+             <br />
+                <table class="auto-style18">
+                    <tr>
+                        <td><iframe id="I1" allowfullscreen="" frameborder="0" name="I1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15105.056894671105!2d82.8039551!3d18.8309159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39ed11d6cdb996f2!2sCentral+University+of+Orissa%2C+Koraput!5e0!3m2!1sen!2sin!4v1504939739918" style="border-style: none; border-color: inherit; border-width: 0; height: 126px; width: 1028px;"></iframe></td>
+                    </tr>
+                </table>
+            
+                       
+        </div>
+
+    </form>
+</body>
+</html>
